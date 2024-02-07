@@ -21,7 +21,7 @@
 <a class="nav-link" href="{{url('/')}}">Home</a>
 </li>
 <li class="nav-item active">
-<a class="nav-link" href="{{url('/daftar')}}">Daftar Siswa</a>
+<a class="nav-link" href="{{url('/DaftarSiswa')}}">Daftar Siswa</a>
 </li>
 </ul>
 </div>

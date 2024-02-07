@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\daftarsiswa;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,5 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/DaftarSiswa', [daftarsiswa::class, 'siswa']);
+Route::get('/create', [daftarsiswa::class, 'tambah']);
 
 

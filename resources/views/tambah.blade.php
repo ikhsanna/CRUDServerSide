@@ -14,7 +14,8 @@
 <div class="row">
 <div class="col-md-12 mt-3">
 <h3>Form Tambah Siswa</h3>
-<form action="" method="post">
+<form action="/DaftarSiswa" method="post">
+    @csrf
 <div class="form-group">
 <label for="name">Nama Siswa</label>
 <input class="form-control" type="text" name="name" id="name" placeholder="Masukkan Nama Siswa">
