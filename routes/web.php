@@ -20,5 +20,5 @@ Route::get('/', function () {
 
 Route::get('/DaftarSiswa', [daftarsiswa::class, 'siswa']);
 Route::get('/create', [daftarsiswa::class, 'tambah']);
-
+route::get('/edit',[daftarsiswa::class,'edit']);
 

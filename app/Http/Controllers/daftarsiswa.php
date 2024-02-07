@@ -13,4 +13,7 @@ class daftarsiswa extends Controller
     public function tambah(){
         return view('tambah');
     }
+    public function edit(){
+        return view('edit');
+    }
 }
