@@ -23,6 +23,12 @@ class DataTable extends Migration
      */
     public function down()
     {
-        
+        Schema::create('students', function (Blueprint $table) {
+            $table -> bigIncrements('id');
+            $table -> string('nama');
+            $table -> string('jurusan');
+            $table -> integer('angkatan');
+
+        });
     }
 }
