@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\daftarsiswa;
-
+use App\Http\Controllers\TampilDataSiswaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,7 +18,12 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/DaftarSiswa', [daftarsiswa::class, 'siswa']);
-Route::get('/create', [daftarsiswa::class, 'tambah']);
-route::get('/edit',[daftarsiswa::class,'edit']);
 
+Route::get('/DaftarSiswa', [daftarsiswa::class, 'siswa']);
+Route::get('/DaftarSiswa/tambah', [daftarsiswa::class, 'tambah']);
+route::get('/DaftarSiswa/edit', [daftarsiswa::class, 'edit']);
+
+// POST 
+Route::post('/DaftarSiswa',[daftarsiswa::class, 'inputdata']);
+// get data
+// Route::get('/DaftarSiswa', [TampilDataSiswaController::class, 'getdataSiswa']);

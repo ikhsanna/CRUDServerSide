@@ -13,22 +13,23 @@ class DataTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('students', function (Blueprint $table) {
+            $table -> bigIncrements('id');
+            $table -> string('nama')->nullable(false);
+            $table -> string('jurusan')->nullable(false);
+            $table -> integer('angkatan')->nullable(false);
+            $table -> integer('kelas')->nullable(false);
+            $table -> timestamps();
+        });
     }
 
     /**
      * Reverse the migrations.
-     *
+     *p
      * @return void
      */
     public function down()
     {
-        Schema::create('students', function (Blueprint $table) {
-            $table -> bigIncrements('id');
-            $table -> string('nama');
-            $table -> string('jurusan');
-            $table -> integer('angkatan');
-
-        });
+        Schema::dropIfExists('students');
     }
 }

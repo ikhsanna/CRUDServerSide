@@ -18,12 +18,18 @@
         @csrf
         <div class="form-group">
             <label for="name">Nama Siswa</label>
-            <input class="form-control" type="text" name="name" id="name" placeholder="Masukkan Nama Siswa">
+            <input class="form-control" type="text" name="nama" id="name" placeholder="Masukkan Nama Siswa">
         </div>
+        @error('nama')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
         <div class="form-group">
             <label for="jurusan">Jurusan</label>
             <input class="form-control" type="text" name="jurusan" id="jurusan" placeholder="masukkan Nama Jurusan">
         </div>
+        @error('jurusan')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
         <div class="form-group">
             <label for="angkatan">Angkatan</label>
             <input class="form-control" type="number" name="angkatan" id="angkatan" placeholder="masukkan Tahun Angkatan">

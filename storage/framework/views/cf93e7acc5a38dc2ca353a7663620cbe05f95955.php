@@ -17,7 +17,7 @@
 <form action="" method="post">
 <div class="form-group">
 <label for="name">Nama Siswa</label>
-<input class="form-control" type="text" name="name" id="name" placeholder="Masukkan Nama Siswa">
+<input class="form-control" type="text" name="nama" id="name" placeholder="Masukkan Nama Siswa">
 </div>
 <div class="form-group">
 <label for="jurusan">Jurusan</label>
